@@ -30,12 +30,12 @@ jobs:
           sudo apt-get install -y chromium
 
       - name: Run scraper
-        run: python allindiamedicalcollegedetails221_240.py
+        run: python allindiamedicalcollegedetails601_620.py
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add allindiamedicalcollegedetails221_240.json
+          git add allindiamedicalcollegedetails601_620.json
           git commit -m "Auto update MBA data" || echo "No changes"
           git push
